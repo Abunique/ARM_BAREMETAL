@@ -1,0 +1,10 @@
+21:10:06 **** Incremental Build of configuration Debug for project memory_window ****
+make -j4 all 
+arm-none-eabi-size  memory_window.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4836	    100	   1908	   6844	   1abc	memory_window.elf
+Finished building: default.size.stdout
+ 
+
+21:10:06 Build Finished. 0 errors, 0 warnings. (took 367ms)
+

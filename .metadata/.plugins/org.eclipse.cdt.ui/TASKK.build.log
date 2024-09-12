@@ -1,0 +1,10 @@
+18:30:23 **** Incremental Build of configuration Debug for project TASKK ****
+make -j4 all 
+arm-none-eabi-size  TASKK.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5028	     96	   1984	   7108	   1bc4	TASKK.elf
+Finished building: default.size.stdout
+ 
+
+18:30:24 Build Finished. 0 errors, 0 warnings. (took 319ms)
+

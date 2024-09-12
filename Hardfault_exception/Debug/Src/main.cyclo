@@ -1,0 +1,6 @@
+../Src/main.c:26:5:main	1
+../Src/main.c:54:6:HardFault_Handler	1
+../Src/main.c:60:6:MemManage_Handler	1
+../Src/main.c:66:6:BusFault_Handler	1
+../Src/main.c:72:29:UsageFault_Handler	1
+../Src/main.c:79:6:UsageFault_Handler_c	1

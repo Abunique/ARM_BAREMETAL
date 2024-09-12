@@ -1,0 +1,10 @@
+08:15:03 **** Incremental Build of configuration Debug for project Tempature_uart_system ****
+make -j4 all 
+arm-none-eabi-size  Tempature_uart_system.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11248	     12	   1652	  12912	   3270	Tempature_uart_system.elf
+Finished building: default.size.stdout
+ 
+
+08:15:03 Build Finished. 0 errors, 0 warnings. (took 521ms)
+

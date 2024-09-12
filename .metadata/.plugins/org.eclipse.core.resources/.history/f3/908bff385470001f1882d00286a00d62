@@ -1,0 +1,43 @@
+/*
+ * main.h
+ *
+ *  Created on: Sep 11, 2024
+ *      Author: Abinaya
+ */
+
+#ifndef MAIN_H_
+#define MAIN_H_
+
+
+//Private stack definitions
+
+#define SRAM_START            0x20000000U
+#define SRAM_END              ((SRAM_START)+(128*1024))
+#define SIZE_OF_TASK          1024U
+#define SIZE_OF_SCHEDULER     1024U
+#define TASK1_PSP             SRAM_END
+#define TASK2_PSP             SRAM_END - (1 * SIZE_OF_TASK)
+#define TASK3_PSP             SRAM_END - (2 * SIZE_OF_TASK)
+#define TASK4_PSP             SRAM_END - (3 * SIZE_OF_TASK)
+#define IDLE_STACK_START      SRAM_END - (4 * SIZE_OF_TASK)
+#define SCHEDULER_START       SRAM_END - (5 * SIZE_OF_TASK)
+#define MAX_TASK              5
+
+//for initializing dummy stack values
+#define DUMMY_XPSR        0x01000000U
+
+//systick_definitions
+#define SYSTEM_CLOCK     16000000U
+#define TICK_HZ          1000U
+
+//struct definitions
+#define TASK_READY_STATE  0x00
+#define TASK_BLOCKED_STATE  0XFF
+
+
+#define INTERRUPT_DISABLE()  do{__asm volatile ("MOV R0,#0x1"); asm volatile("MSR PRIMASK,R0"); } while(0)
+
+#define INTERRUPT_ENABLE()  do{__asm volatile ("MOV R0,#0x0"); asm volatile("MSR PRIMASK,R0"); } while(0)
+
+
+#endif /* MAIN_H_ */

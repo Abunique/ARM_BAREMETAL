@@ -1,0 +1,10 @@
+15:05:41 **** Incremental Build of configuration Debug for project tmp117_uasrt ****
+make -j4 all 
+arm-none-eabi-size  tmp117_uasrt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  43891	     92	   3524	  47507	   b993	tmp117_uasrt.elf
+Finished building: default.size.stdout
+ 
+
+15:05:42 Build Finished. 0 errors, 0 warnings. (took 1s.81ms)
+

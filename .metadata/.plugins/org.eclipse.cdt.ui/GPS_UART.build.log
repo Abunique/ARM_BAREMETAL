@@ -1,0 +1,10 @@
+08:14:55 **** Incremental Build of configuration Debug for project GPS_UART ****
+make -j4 all 
+arm-none-eabi-size  GPS_UART.elf 
+   text	   data	    bss	    dec	    hex	filename
+  43356	    544	   3408	  47308	   b8cc	GPS_UART.elf
+Finished building: default.size.stdout
+ 
+
+08:14:56 Build Finished. 0 errors, 0 warnings. (took 543ms)
+
